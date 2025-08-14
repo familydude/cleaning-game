@@ -1,0 +1,39 @@
+{
+  "name": "cleaning-party-game",
+  "version": "1.0.0",
+  "description": "A multiplayer cleaning party game inspired by The Devil and the Details - complete household tasks, partner up, and beat the clock!",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "echo 'No build step needed for this worker'",
+    "kv:create": "wrangler kv:namespace create \"GAME_DATA\"",
+    "kv:create:preview": "wrangler kv:namespace create \"GAME_DATA\" --preview",
+    "kv:list": "wrangler kv:key list --binding=GAME_DATA",
+    "kv:clear": "wrangler kv:key list --binding=GAME_DATA | jq -r '.[].name' | xargs -I {} wrangler kv:key delete {} --binding=GAME_DATA"
+  },
+  "keywords": [
+    "cloudflare", 
+    "worker", 
+    "multiplayer", 
+    "game", 
+    "cleaning", 
+    "party", 
+    "household", 
+    "tasks", 
+    "jackbox", 
+    "devil-and-details"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "your-github-repo-url"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
