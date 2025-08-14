@@ -1,0 +1,17 @@
+name = "cleaning-party-game"
+main = "src/index.js"
+compatibility_date = "2024-08-12"
+
+# KV namespace for storing game data
+[[kv_namespaces]]
+binding = "GAME_DATA"
+id = "your-kv-namespace-id"
+preview_id = "your-preview-kv-namespace-id"
+
+[vars]
+# Add any environment variables here if needed
+
+# Custom domain setup - uncomment and modify these lines:
+# [[routes]]
+# pattern = "yourdomain.com/*"
+# zone_name = "yourdomain.com"
