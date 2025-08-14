@@ -5,7 +5,7 @@ compatibility_date = "2024-08-12"
 # KV namespace for storing game data
 [[kv_namespaces]]
 binding = "GAME_DATA"
-id = "your-kv-namespace-id"
+id = "f8f98b18845a4048b859c7ab04fb4df2"
 preview_id = "your-preview-kv-namespace-id"
 
 [vars]
